@@ -13,9 +13,11 @@ This extension continuously checks if a YouTube advertisement is playing and if 
 
 1. Download the extension `.zip` file from the [releases page](https://github.com/Mirrrek/youtube-quiet-ads/releases)
 2. Extract the contents into a folder
-3. Open the [Chrome Extensions page](chrome://extensions) and enable `Developer mode` (using the toggle in the top right corner)
-4. Click on `Load unpacked` in the top left corner and select the folder you extracted the contents to
+3. Open the Chrome Extensions page `chrome://extensions` and enable _Developer mode_ (using the toggle in the top right corner)
+4. Click on _Load unpacked_ in the top left corner and select the folder you extracted the contents to
 5. In a new tab, open [YouTube](https://www.youtube.com) and click on a video with ads to see if the extension was installed successfully
+
+To enable the extension in _Incognito mode_, toggle the option in the _Details_ page accessible from the extension's card on the Chrome Extensions page.
 
 ## Building
 
