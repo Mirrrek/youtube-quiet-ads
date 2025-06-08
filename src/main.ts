@@ -55,9 +55,24 @@ function main() {
                         top: 50%;
                         left: 50%;
                         width: fit-content;
-                        translate: -50% calc(-50% + 6rem);
-                        box-shadow: 0 0 2rem #ffffff20;
+                        translate: -50% calc(-50% + 3.5rem);
+                        padding: 0 1.75rem !important;
+                        background: transparent;
                         opacity: 1 !important;
+                    }
+
+                    .ytp-skip-ad-button:hover {
+                        background: inherit !important;
+                    }
+
+                    .ytp-skip-ad-button__text {
+                        font-family: monospace;
+                        font-size: 1.2rem;
+                        text-transform: lowercase;
+                    }
+
+                    .ytp-skip-ad-button__icon {
+                        display: none;
                     }
                 `;
                 mutation.target.appendChild(styleElement);
