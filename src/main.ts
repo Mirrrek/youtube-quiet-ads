@@ -83,6 +83,26 @@ function main() {
                 mutation.target.appendChild(messageElement);
 
                 hiding = true;
+            } else if (mutation.target.classList.contains('ad-showing') && hiding && mutation.target.classList.contains('paused-mode')) {
+                log('WARN', 'Ad is paused, playing...');
+
+                const playButtonElements = [...mutation.target.getElementsByClassName('ytp-play-button')];
+
+                if (playButtonElements.length === 0) {
+                    log('ERROR', 'Play button not found');
+                } else {
+                    if (playButtonElements.length > 1) {
+                        log('WARN', 'Multiple play buttons found');
+                    }
+
+                    const playButton = playButtonElements[0];
+
+                    if (!(playButton instanceof HTMLButtonElement)) {
+                        log('ERROR', 'Play button is not a button element');
+                    } else {
+                        playButton.click();
+                    }
+                }
             } else if (!mutation.target.classList.contains('ad-showing') && hiding) {
                 log('INFO', 'Ad ended, showing screen...');
 
