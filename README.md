@@ -9,6 +9,8 @@ Since only the stylesheets are modified, YouTube shouldn't notice this extension
 
 This extension continuously checks if a YouTube advertisement is playing and if so, hides and mutes the video player until the ad is over. If the ad is skippable, a _Skip_ button will appear as soon as the ad starts. Unfortunately, due to YouTube's elaborate defenses, it is not possible to click this button automatically, however you don't need to wait 5 seconds for it to show up.
 
+**This extension is compatible with existing adblockers**. You can use it as a fallback if your adblocker fails to block an ad (as is often the case with [AdBlock](https://getadblock.com/en/)).
+
 ## Installation
 
 1. Download the extension `.zip` file from the [releases page](https://github.com/Mirrrek/youtube-quiet-ads/releases)
